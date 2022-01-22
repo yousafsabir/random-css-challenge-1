@@ -44,14 +44,16 @@
 }
 
 .price {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
 .shipping {
   color: #4d4d4d;
   font-size: 10px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin: 0 0 20px 70px;
+  display: inline-block;
 }
 
 .product-description {
@@ -71,7 +73,6 @@
 
 .product-det {
   text-transform: uppercase;
-  margin: 20px 0;
 }
 
 ul li {
@@ -99,4 +100,44 @@ ul li:last-child {
   cursor: pointer;
   color: #000;
   background-color: #fff;
+}
+
+/* absolutely positioning free shipping */
+.sec-shipping {
+  position: relative;
+}
+
+/* Floating layout */
+/* .flt-left {
+  margin-top: 20px;
+  float: left;
+}
+
+.flt-middle {
+  width: 243px;
+  margin-top: 20px;
+  margin-left: 40px;
+  float: left;
+}
+
+.flt-right {
+  width: 243px;
+  margin-top: 20px;
+  margin-left: 40px;
+  float: left;
+} */
+
+/* Flex box */
+
+.flexbox-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flt-middle {
+  flex-basis: 240px;
+}
+
+.flt-right {
+  flex-basis: 240px;
 }
